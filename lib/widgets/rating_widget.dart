@@ -2,11 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nusantara_eats/theme/app_theme.dart';
 
 class RatingWidget extends StatelessWidget {
-  const RatingWidget({
-    super.key,
-    required this.rating,
-    this.size = 16,
-  });
+  const RatingWidget({super.key, required this.rating, this.size = 16});
 
   final double rating;
   final double size;
@@ -31,4 +27,3 @@ class RatingWidget extends StatelessWidget {
     );
   }
 }
-

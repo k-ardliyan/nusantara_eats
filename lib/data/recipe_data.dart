@@ -232,4 +232,3 @@ final List<Recipe> recipes = [
     ],
   ),
 ];
-

@@ -176,7 +176,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   final isWide = width >= 720;
 
                   if (!isWide) {
-                    final itemCount = items.isEmpty ? 0 : (items.length * 2 - 1);
+                    final itemCount = items.isEmpty
+                        ? 0
+                        : (items.length * 2 - 1);
                     return SliverList(
                       delegate: SliverChildBuilderDelegate((context, index) {
                         if (index.isOdd) return const SizedBox(height: 14);
@@ -199,8 +201,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     );
                   }
 
-                  final crossAxisCount =
-                      (width / 320).floor().clamp(2, 4);
+                  final crossAxisCount = (width / 320).floor().clamp(2, 4);
 
                   return SliverGrid(
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

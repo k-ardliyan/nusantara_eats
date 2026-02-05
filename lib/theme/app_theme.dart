@@ -34,10 +34,7 @@ class AppTheme {
       primaryColor: primaryColor,
       dividerColor: dividerColor,
       textTheme: GoogleFonts.poppinsTextTheme(
-        base.textTheme.apply(
-          bodyColor: textPrimary,
-          displayColor: textPrimary,
-        ),
+        base.textTheme.apply(bodyColor: textPrimary, displayColor: textPrimary),
       ),
       appBarTheme: AppBarTheme(
         elevation: 0,
@@ -52,15 +49,16 @@ class AppTheme {
       cardTheme: CardThemeData(
         color: surfaceColor,
         elevation: 4,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 0),
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: Colors.white,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 12,
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: dividerColor),
@@ -73,10 +71,7 @@ class AppTheme {
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: primaryColor, width: 1.5),
         ),
-        hintStyle: GoogleFonts.lato(
-          color: textSecondary,
-          fontSize: 14,
-        ),
+        hintStyle: GoogleFonts.lato(color: textSecondary, fontSize: 14),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -111,9 +106,7 @@ class AppTheme {
       colorScheme: colorScheme,
       scaffoldBackgroundColor: const Color(0xFF121212),
       primaryColor: primaryColor,
-      dividerColor: dividerColor.withValues(
-        alpha: dividerColor.a * 0.4,
-      ),
+      dividerColor: dividerColor.withValues(alpha: dividerColor.a * 0.4),
       textTheme: GoogleFonts.poppinsTextTheme(
         base.textTheme.apply(
           bodyColor: Colors.white,
@@ -133,39 +126,33 @@ class AppTheme {
       cardTheme: CardThemeData(
         color: colorScheme.surface,
         elevation: 2,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 0),
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: colorScheme.surface,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 12,
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
-            color: dividerColor.withValues(
-              alpha: dividerColor.a * 0.4,
-            ),
+            color: dividerColor.withValues(alpha: dividerColor.a * 0.4),
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
-            color: dividerColor.withValues(
-              alpha: dividerColor.a * 0.4,
-            ),
+            color: dividerColor.withValues(alpha: dividerColor.a * 0.4),
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: primaryColor, width: 1.5),
         ),
-        hintStyle: GoogleFonts.lato(
-          color: Colors.white70,
-          fontSize: 14,
-        ),
+        hintStyle: GoogleFonts.lato(color: Colors.white70, fontSize: 14),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -184,4 +171,3 @@ class AppTheme {
     );
   }
 }
-

@@ -60,9 +60,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 width: 96,
                 height: 96,
                 decoration: BoxDecoration(
-                  color: Colors.white.withValues(
-                    alpha: Colors.white.a * 0.85,
-                  ),
+                  color: Colors.white.withValues(alpha: Colors.white.a * 0.85),
                   shape: BoxShape.circle,
                   boxShadow: const [
                     BoxShadow(

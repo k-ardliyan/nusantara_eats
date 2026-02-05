@@ -22,14 +22,12 @@ class CategoryChip extends StatelessWidget {
         selected: selected,
         onSelected: (_) => onTap(),
         labelStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
-              color: selected ? Colors.white : AppTheme.textSecondary,
-              fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
-            ),
+          color: selected ? Colors.white : AppTheme.textSecondary,
+          fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
+        ),
         backgroundColor: Colors.white,
         selectedColor: AppTheme.primaryColor,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         side: BorderSide(
           color: selected ? AppTheme.primaryColor : AppTheme.dividerColor,
         ),
@@ -37,4 +35,3 @@ class CategoryChip extends StatelessWidget {
     );
   }
 }
-

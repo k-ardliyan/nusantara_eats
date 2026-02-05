@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nusantara_eats/theme/app_theme.dart';
 
 class IngredientItem extends StatelessWidget {
-  const IngredientItem({
-    super.key,
-    required this.text,
-  });
+  const IngredientItem({super.key, required this.text});
 
   final String text;
 
@@ -26,13 +23,12 @@ class IngredientItem extends StatelessWidget {
         Expanded(
           child: Text(
             text,
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: AppTheme.textSecondary,
-                ),
+            style: Theme.of(
+              context,
+            ).textTheme.bodyMedium?.copyWith(color: AppTheme.textSecondary),
           ),
         ),
       ],
     );
   }
 }
-

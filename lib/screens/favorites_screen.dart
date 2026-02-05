@@ -25,9 +25,9 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
         title: Text(
           'Favorit',
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.w700,
-                color: AppTheme.textPrimary,
-              ),
+            fontWeight: FontWeight.w700,
+            color: AppTheme.textPrimary,
+          ),
         ),
         centerTitle: false,
         elevation: 0,
@@ -54,9 +54,9 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                   child: Text(
                     'Resep Tersimpan',
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.w700,
-                          color: AppTheme.textPrimary,
-                        ),
+                      fontWeight: FontWeight.w700,
+                      color: AppTheme.textPrimary,
+                    ),
                   ),
                 ),
               ),
@@ -98,8 +98,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                       );
                     }
 
-                    final crossAxisCount =
-                        (width / 320).floor().clamp(2, 4);
+                    final crossAxisCount = (width / 320).floor().clamp(2, 4);
 
                     return SliverGrid(
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
